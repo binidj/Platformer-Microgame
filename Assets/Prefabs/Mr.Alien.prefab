@@ -169,7 +169,7 @@ MonoBehaviour:
   path: {fileID: 0}
   slimePrefab: {fileID: 1661912868639658944, guid: f158aa2be3df6489185ef721f6fd79c1,
     type: 3}
-  throwCooldown: 5
+  throwCooldown: 2
 --- !u!114 &9017609558309946854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,8 +185,8 @@ MonoBehaviour:
   minGroundNormalY: 0.65
   gravityModifier: 1
   velocity: {x: 0, y: 0}
-  maxSpeed: 3.2
-  jumpTakeOffSpeed: 3.2
+  maxSpeed: 3
+  jumpTakeOffSpeed: 3
   move: {x: 0, y: 0}
   jump: 0
   stopJump: 0
