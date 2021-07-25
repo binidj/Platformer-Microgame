@@ -20,7 +20,10 @@ namespace Platformer.Mechanics
         internal Collider2D _collider;
         internal AudioSource _audio;
         SpriteRenderer spriteRenderer;
-
+        public bool destroyIfNotMoving = false;
+        private float interval = 0f;
+        [SerializeField]
+        private float limit = 5;
         public Bounds Bounds => _collider.bounds;
 
         void Awake()
@@ -48,6 +51,18 @@ namespace Platformer.Mechanics
             {
                 if (mover == null) mover = path.CreateMover(control.maxSpeed * 0.5f);
                 control.move.x = Mathf.Clamp(mover.Position.x - transform.position.x, -1, 1);
+            }
+            if (destroyIfNotMoving) 
+            {
+                interval += Time.deltaTime;
+                if (interval > limit)
+                {
+                    if (GetComponent<Rigidbody2D>().velocity.sqrMagnitude < 0.5f)
+                    {
+                        Destroy(gameObject);
+                    }
+                    interval = 0f;
+                }
             }
         }
 

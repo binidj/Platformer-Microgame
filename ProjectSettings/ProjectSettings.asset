@@ -554,7 +554,7 @@ PlayerSettings:
   scriptingDefineSymbols:
     1: UNITY_POST_PROCESSING_STACK_V2;UNITY_TEMPLATE_PLATFORMER
     4: UNITY_POST_PROCESSING_STACK_V2
-    7: UNITY_POST_PROCESSING_STACK_V2
+    7: UNITY_POST_PROCESSING_STACK_V2;UNITY_TEMPLATE_PLATFORMER
     13: UNITY_POST_PROCESSING_STACK_V2;UNITY_TEMPLATE_PLATFORMER
     14: UNITY_POST_PROCESSING_STACK_V2
     19: UNITY_POST_PROCESSING_STACK_V2
@@ -588,7 +588,7 @@ PlayerSettings:
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: platformer-template
-  metroPackageVersion: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -596,7 +596,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: platformer-template
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Platformer-Microgame
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
